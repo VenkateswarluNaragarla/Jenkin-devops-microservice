@@ -30,11 +30,6 @@ pipeline {
 				echo "BUILD_TAG - $env.BUILD_TAG"
 			}
 		}
-		stage('COMPILE'){
-			steps {
-				//echo "mvn clean compile---"
-			}
-		}
 		stage('Test'){
 			steps {
 				echo "Test"
