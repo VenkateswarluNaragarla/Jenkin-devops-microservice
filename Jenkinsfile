@@ -19,7 +19,7 @@ pipeline {
 	stages {
 		stage('Build'){
 			steps {
-				bat "mvn --version"
+				mvn --version
 				echo "Build"
 				echo " PATH - $PATH"
 				echo "BUILD_NUMBER - $env.BUILD_NUMBER"
